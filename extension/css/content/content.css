@@ -1,0 +1,46 @@
+
+.hta-marked-comment.hta-collapsed {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.4;
+    transition: opacity .7s ease-in-out;
+}
+
+.hta-marked-comment.hta-collapsed:hover {
+    opacity: 1;
+}
+
+.hta-marked-comment.hta-collapsed .comments__item__reply, .hta-marked-comment.hta-collapsed .comments__item__text {
+    display: none;
+}
+
+.hta-expander {
+    color: #aaa;
+    cursor: pointer;
+    font-size: 12px;
+    border-bottom: 1px dashed;
+}
+
+.hta-expander:hover {
+    color: #ff8b1e;
+}
+.hta-expander::after {
+    content: "collapse";
+}
+
+
+.hta-marked-comment.hta-collapsed .hta-expander::after {
+    content: "expand";
+}
+
+
+.hta-humor-shit {
+    display: none;
+    color: #aaa;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.hta-marked-comment.hta-collapsed .hta-humor-shit {
+    display: inline-block;
+}
